@@ -6,3 +6,5 @@ https://github.com/jakegut/resume
 
 Which itself was based on this template:
 https://github.com/sb2nov/resume
+
+![Resume Preview](Resume.png)
