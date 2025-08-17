@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in LaTeX
+% Author : John Hibbert
+% Based on:  https://github.com/jakegut/resume  
+% Which was based on: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape John Hibbert} \\ \vspace{1pt}
+    \small 
+% Email and phone number are obfuscated for git commits.  Use real info when sending it out.
+   123-456-7890 $|$ \href{mailto:placeholder@fake-email.mail}{\underline{placeholder@fake-email.mail}} $|$ 
+    \href{https://github.com/johnhibbert}{\underline{github.com/johnhibbert}} $|$ 
+    \href{https://linkedin.com/in/johnandrewhibbert}{\underline{linkedin.com/in/johnandrewhibbert}}
+\end{center}
+
+%-----------TECHNICAL  SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+ \textbf{Software Development}{: C\#, .NET, Visual Studio, SOLID} \\
+ \textbf{APIs}{: REST, HTTP, JSON, Postman, Insomnia, Swagger} \\
+ \textbf{Databases}{: SQL, Relational Databases, SSMS, Entity Framework} \\
+ \textbf{Azure / Cloud}{: Service Bus, Table Storage, Blob Storage, Functions, Key Vault, Logic Apps} \\
+ \textbf{QA}{: Unit Testing, Debugging, Troubleshooting } \\
+ \textbf{Software Project Management}{: Agile, GitHub, Azure DevOps, Jira, Confluence} \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+%% ----- ConnectPay, Inc
+    \resumeSubheading
+      {Full Stack Developer}{Nov. 2023 -- Oct. 2024}
+      {ConnectPay, Inc}{Foxborough, MA}
+      \resumeItemListStart
+        \resumeItem{Designed new class library to convert acquired company clients into existing database schema, eliminating need to involve senior engineers}
+        \resumeItem{Overhauled tax update system to allow simultaneous submission of tax and surtax rates, expanding work available to be completed in minutes instead of hours}
+        \resumeItem{Implemented new user permissions to restrict access to certain page elements within legacy application}
+        \resumeItem{Formulated process to replace legacy VB.NET code with C\# via characterization test framework to ensure continuity of expected behavior}
+        \resumeItem{Proposed software development life cycle changes to modernize manual release process by leveraging NuGet and Azure DevOps pipelines}
+        \resumeItem{Authored documentation of onboarding process to shorten period before contribution}
+      \resumeItemListEnd
+
+%% ----- Capital Technology Group (CTG) / United States Citizenship and Immigration Services (USCIS)
+    \resumeSubheading
+      {Senior Software Engineer}{Aug. 2022 -- Apr. 2023}
+      {Capital Technology Group}{(Remote) Silver Spring, MD}
+      \resumeItemListStart
+        \resumeItem{Contracted to United States Citizenship and Immigration Services (USCIS)}
+        \resumeItem{Investigated and corrected software discrepancies reported by USCIS users in continuing effort to make new web application fully feature complete as compared to legacy system}
+      \resumeItemListEnd
+
+%% ----- EPFR
+    \resumeSubheading
+      {Software Engineer}{Jul. 2019 -- Aug. 2022}
+      {EPFR}{Cambridge, MA}
+      \resumeItemListStart
+        \resumeItem{Rebuilt legacy report generation system to decrease coupling and improve efficiency as part of large-scale migration to Azure where daily reports increased from a few hundred to several thousand}
+        \resumeItem{Determined root cause of various errors reported by team members and devised rapid fixes for urgent issues discovered on production systems}
+        \resumeItem{Composed hundreds of unit tests for new and legacy projects and refactored several existing projects to better implement dependency injection, allowing unit testing for the first time}
+        \resumeItem{Refactored primary API to remove code duplication and extend functionality with additional methods}
+        \resumeItem{Improved project security by migrating system credentials to Azure Key Vault}
+        \resumeItem{Created Azure Logic Apps to replace legacy functionality from Windows Task Scheduler}
+        \resumeItem{Increased system visibility by implementing Applications Insights telemetry}
+    \resumeItemListEnd
+
+%% ----- Hamilton Storage Technologies
+    \resumeSubheading
+      {Software Developer}{Nov. 2016 -- July 2019}
+      {Hamilton Storage Technologies}{Franklin, MA}
+      \resumeItemListStart
+       \resumeItem{Recreated internal program used by team members to improve its usability as part of a large-scale strategic goal to reduce commissioning times from over three months to about six weeks}
+       \resumeItem{Built new program to automate process of generating SQL files used to configure databases for each new device, reducing setup time from multiple days to approximately one hour}
+       \resumeItem{Composed standalone applications utilizing Hamilton REST API to serve as example to customers in their own integration efforts}
+       \resumeItem{Supported Hamilton customers in software integration efforts via with Hamilton REST API}
+       \resumeItem{Trained customers, vendors and team members in use of Hamilton software GUI}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Rhode Island}{Kingston, RI}
+      {Bachelor of Arts in Computer Science}{2015}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+
+%--- 'Multiple Positions Heading' and 'Projects' removed for now.
+%--- If you're using this template, see the originals for ways to include them.
+
+%--- Also, IFFALSE lets you 'block comment' essentially
+%--- https://tex.stackexchange.com/questions/87303/multi-line-block-comments-in-latex
+
+
